@@ -31,7 +31,7 @@
 
     @yield('styles')
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="90" class="side-nav before-after">
 
 <header >
     <!-- start navigation -->

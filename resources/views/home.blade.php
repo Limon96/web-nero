@@ -1,8 +1,8 @@
 @extends('layouts.base')
-
 @section('title'){{ __('WEB-NERO создание сайт') }}@endsection
 @section('description'){{ __('Создание сайтов в Краснодаре от 5000 рублей под ключ. Лучшее соотношение цены и качества. Гарантия результата и рост продаж. Варианты реализации и стоимость на сайте. Создаем только качественные, приносящие прибыль проекты.') }}@endsection
 @section('microdata')
+
     <meta property="og:site_name" content="WEB-NERO" />
     <meta property="og:url" content="{{ route('home') }}" />
     <meta property="og:title" content="Создание и продвижение сайтов в Краснодаре - &quot;WEB-NERO&quot;" />
@@ -26,8 +26,8 @@
     <meta name="twitter:title" content="Создание и продвижение сайтов в Краснодаре - &quot;WEB-NERO&quot;">
     <meta name="twitter:description" content="Создание и продвижение сайтов в Краснодаре. Комплексная оптимизация проектов. Выводим в ТОП результативные запросы. Честную цену, результат и качество работ гарантируем.">
     <meta name="twitter:image" content="{{ asset('images/baner.webp') }}">
-@endsection
 
+@endsection
 @section('content')
     <!-- start slider -->
     <section class="fadeIn example no-padding no-transition" id="home">
