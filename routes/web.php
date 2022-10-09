@@ -24,4 +24,9 @@ Route::prefix('blog')->group(function () {
     Route::get('/post/{slug}', [\App\Http\Controllers\Blog\BlogController::class, 'index'])->name('blog.index');
 });
 
+Route::prefix('portfolio')->group(function () {
+    Route::get('/', [\App\Http\Controllers\Portfolio\PortfolioController::class, 'index'])->name('portfolio.index');
+    Route::get('/{slug}', [\App\Http\Controllers\Portfolio\PortfolioController::class, 'show'])->name('portfolio.show');
+});
+
 Route::get('/faq', [\App\Http\Controllers\FAQ\FAQController::class, 'index'])->name('faq.index');

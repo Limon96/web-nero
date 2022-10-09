@@ -43,5 +43,20 @@
                 @endif
             </ul>
         </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link with-sub">
+                <i class="icon ion-ios-paper-outline"></i>
+                <span>Портфолио</span>
+            </a>
+            <ul class="nav-sub">
+                @if(\Illuminate\Support\Facades\Route::has('admin.portfolio_category.index'))
+                    <li class="nav-item"><a href="{{ route('admin.portfolio_category.index') }}" class="nav-link @if(Route::is('admin.portfolio_category.index')) active @endif">Категории</a></li>
+                @endif
+                @if(\Illuminate\Support\Facades\Route::has('admin.portfolio.index'))
+                    <li class="nav-item"><a href="{{ route('admin.portfolio.index') }}" class="nav-link @if(Route::is('admin.portfolio.index')) active @endif">Портфолио</a></li>
+                @endif
+            </ul>
+        </li>
     </ul>
 </div>

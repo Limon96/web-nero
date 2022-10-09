@@ -50,13 +50,13 @@
                             data-in="fadeIn" data-out="fadeOut">
                             <!-- start menu item -->
                             <li>
-                                <a href="#price" class="scroll">Цены</a>
+                                <a href="{{ route('home') }}#price" class="scroll">Цены</a>
                             </li>
                             <li>
                                 <a href="porfolio.html" >Портфолио</a>
                             </li>
                             <li>
-                                <a href="#about" class="scroll">О нас</a>
+                                <a href="{{ route('home') }}#about" class="scroll">О нас</a>
                             </li>
                             <li>
                                 <a href="blog.html" >Статьи</a>

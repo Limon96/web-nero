@@ -5,10 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class CustomerRating extends Model
+class Setting extends Model
 {
     use HasFactory;
 
-    protected $table = 'customer_rating';
-    protected $primaryKey = 'customer_rating_id';
+    protected $fillable = [
+        'key',
+        'value'
+    ];
+
 }

@@ -27,6 +27,8 @@ Route::prefix('_manager')->group(function() {
                 'blog_category' => \App\Http\Controllers\Blog\Admin\BlogCategoryController::class,
                 'faq' => \App\Http\Controllers\FAQ\Admin\FAQController::class,
                 'faq_category' => \App\Http\Controllers\FAQ\Admin\FAQCategoryController::class,
+                'portfolio' => \App\Http\Controllers\Portfolio\Admin\PortfolioController::class,
+                'portfolio_category' => \App\Http\Controllers\Portfolio\Admin\PortfolioCategoryController::class,
             ]);
         });
     });

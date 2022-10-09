@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\File;
 class Image
 {
 
-    const NO_IMAGE = 'storage/image/no_image.jpg';
+    const NO_IMAGE = 'storage/image/default_image.jpg';
 
     public static function replaceBase64FromHTML($html)
     {
