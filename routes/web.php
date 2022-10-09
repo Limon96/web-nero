@@ -17,7 +17,7 @@ include 'admin.php';
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/{slug}', [\App\Http\Controllers\Landing\LandingController::class, 'index'])->name('landing.show');
+//Route::get('/{slug}', [\App\Http\Controllers\Landing\LandingController::class, 'index'])->name('landing.show');
 
 Route::prefix('blog')->group(function () {
     Route::get('/{slug?}', [\App\Http\Controllers\Blog\BlogCategoryController::class, 'index'])->name('blog_category.index');

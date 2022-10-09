@@ -39,9 +39,9 @@
         <div class="container nav-header-container">
             <div class="row">
                 <div class="col-md-2 col-xs-5">
-                    <a href="index.html" title="Logo" class="logo scroll">
-                        <img src="images/logo-blue-black.webp" class="logo-dark" alt="web-nero">
-                        <img src="images/logo-blue-white.webp" alt="web-nero" class="logo-light default"></a>
+                    <a href="{{ route('home') }}" title="Logo" class="logo scroll">
+                        <img src="{{ asset('images/logo-blue-black.webp') }}" class="logo-dark" alt="web-nero">
+                        <img src="{{ asset('images/logo-blue-white.webp') }}" alt="web-nero" class="logo-light default"></a>
                 </div>
                 <!-- end logo -->
                 <div class="col-md-7 col-xs-2 width-auto pull-right accordion-menu xs-no-padding-right hidden-sm hidden-xs">
@@ -53,13 +53,13 @@
                                 <a href="{{ route('home') }}#price" class="scroll">Цены</a>
                             </li>
                             <li>
-                                <a href="porfolio.html" >Портфолио</a>
+                                <a href="{{ route('portfolio.index') }}" >Портфолио</a>
                             </li>
                             <li>
                                 <a href="{{ route('home') }}#about" class="scroll">О нас</a>
                             </li>
                             <li>
-                                <a href="blog.html" >Статьи</a>
+                                <a href="{{ route('blog_category.index') }}" >Статьи</a>
                             </li>
                             <li>
                                 <a href="contact.html" >Контакты</a>

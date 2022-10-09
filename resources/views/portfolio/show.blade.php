@@ -1,37 +1,64 @@
+@extends('layouts.base')
+
+@section('title'){{ $item->title }}@endsection
+@section('description'){{ $item->meta_description }}@endsection
+@section('keywords'){{ $item->meta_keywords }}@endsection
+@section('microdata')
+
+    <meta property="og:site_name" content="WEB-NERO" />
+    <meta property="og:url" content="{{ route('home') }}" />
+    <meta property="og:title" content="{{ $item->meta_title }}" />
+    <meta property="og:description" content="{{ $item->meta_description }}" />
+    <meta property="og:image" content="{{ asset($item->image) }}" />
+    <meta property="og:image:url" content="{{ asset($item->image) }}" />
+    <meta property="og:street_address" content="г. Краснодар" />
+    <meta property="og:country_name" content="Россия" />
+
+@endsection
+@section('scripts')
+
+@endsection
+
+@section("content")
 
 
+    <!-- blog cover-->
+    <section class="bg blog-cover">
+        <div class="container">
+            <div class="text-center sm-padding-40px-tb sm-padding-15px-lr">
+                <h1 class="display-none no-padding no-margin" aria-hidden="true">NERO-WEB, Создание сайтов, интернет магазинов, SEO продвижение, Портфолио</h1>
+                <h2 class="display-none no-padding no-margin" aria-hidden="true">Создание сайтов в Краснодаре от 5000 рублей под ключ, Портфолио</h2>
+                <h5 class="text-capitalize alt-font text-white margin-20px-bottom font-weight-700">
+                    {{ $item->title }}</h5>
 
-
-
-
-
-
-
-        <div class="article">
-            <div class="left_fon">
-                <a href="{{ route('blog.index', $post->slug) }}">
-                    <div class="img_r" style="background-image: url('{{ thumbnail($post->image, 400) }}')"></div>
-                </a>
-            </div>
-            <div class="rigt_content">
-                <div class="hesde">
-                    <a href="{{ route('blog.index', $post->slug) }}">
-                        <div class="title">{{ $post->title }}</div>
-                    </a>
-                    <div class="extention">
-                        {{ $post->intro }}
-                    </div>
-                </div>
-                <div class="look_date">
-                    <div class="look">
-                        <svg data-v-b0e85714="" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" class="sw-icon info-counter__icon">
-                            <path fill="#456" d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"></path>
-                        </svg>
-                        <span>{{ $post->views }}</span>
-                    </div>
-                    <div class="date"> {{ format_date($item->publish_at, 'full_datetime') }}</div>
+                <div class="page_nav">
+                    <span class="text-white"></span> <a href="{{ route('home') }}" class="text-white">Главная</a> <span class="text-white"><i class="fa fa-angle-double-right"></i> <a href="{{ route('portfolio.index') }}" class="text-white">Портфолио</a></span>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- blog cover end-->
+
+    <!-- blog content-->
+    <section class="standalone text-center single_portfol">
+
+        <div class="container">
 
 
+            <div class="row">
+                <div class="col-md-12">
+                    <p>{{ $item->category->title }}</p>
+                    <p>{!! $item->description !!}</p>
+                    @if($item->link)<a href="{{ $item->link }}" target="_blank">Перейти на сайт</a>@endif
+
+                    <img src="{{ asset($item->link) }}" alt="{{ $item->title }}">
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <!-- blog content end-->
+
+@endsection

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Portfolio;
 
 use App\Http\Controllers\Controller;
+use App\Models\Portfolio;
 use App\Repositories\BlogPostRepository;
 use App\Repositories\PortfolioCategoryRepository;
 use App\Traits\HasBlogCategory;
@@ -19,10 +20,32 @@ class PortfolioController extends Controller {
     {
         $portfolioCategories = app(PortfolioCategoryRepository::class)->all();
 
+        $items = Portfolio::orderByDesc('created_at')->get();
+
         return view('portfolio.index', compact(
+            'items',
             'portfolioCategories'
         ));
     }
 
+    /**
+     * @param string $slug
+     * @return Application|Factory|View
+     */
+    public function show(string $slug)
+    {
+        $item = Portfolio::where('slug', $slug)->get()->first();
+
+        if (!$item) {
+            return abort(404);
+        }
+
+        $item->addView();
+
+
+        return view('portfolio.show', compact(
+            'item'
+        ));
+    }
 
 }

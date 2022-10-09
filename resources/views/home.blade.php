@@ -12,21 +12,6 @@
     <meta property="og:street_address" content="г. Краснодар" />
     <meta property="og:country_name" content="Россия" />
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="@yield('title')">
-    <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:image" content="{{ asset('images/baner.webp') }}" />
-    <meta property="og:description" content="@yield('description')" />
-    <meta property="og:image:secure_url" content="{{ asset('images/baner.webp') }}">
-
-    <!-- Twitter Meta Tags -->
-    <meta property="twitter:domain" content="{{ request()->getHost() }}">
-    <meta property="twitter:url" content="{{ url()->current() }}">
-    <meta name="twitter:title" content="Создание и продвижение сайтов в Краснодаре - &quot;WEB-NERO&quot;">
-    <meta name="twitter:description" content="Создание и продвижение сайтов в Краснодаре. Комплексная оптимизация проектов. Выводим в ТОП результативные запросы. Честную цену, результат и качество работ гарантируем.">
-    <meta name="twitter:image" content="{{ asset('images/baner.webp') }}">
-
 @endsection
 @section('content')
     <!-- start slider -->
