@@ -18,15 +18,19 @@ class PortfolioController extends Controller
      */
     public function index(Request $request)
     {
-        $items = Portfolio::select([
-            'id',
-            'title',
-            'created_at',
-            'updated_at',
-            'publish_at',
-            'status',
-            'slug',
-        ])->get();
+        $items = Portfolio
+            ::select([
+                'id',
+                'title',
+                'created_at',
+                'updated_at',
+                'publish_at',
+                'portfolio_category_id',
+                'status',
+                'slug',
+            ])
+            ->with(['category'])
+            ->get();
 
         return view('portfolio.admin.index', compact(
             'items'

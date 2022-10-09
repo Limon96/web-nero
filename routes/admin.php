@@ -21,6 +21,12 @@ Route::prefix('_manager')->group(function() {
 
         Route::get('pagebuilder/{block}', [\App\Http\Controllers\PageBuilder\PageBuilderController::class, 'index'])->name('admin.pagebuilder.index');
 
+        Route::get('portfolio/setting', [\App\Http\Controllers\Portfolio\Admin\SettingController::class, 'index'])->name('admin.portfolio.setting.index');
+        Route::post('portfolio/setting', [\App\Http\Controllers\Portfolio\Admin\SettingController::class, 'update'])->name('admin.portfolio.setting.update');
+
+        Route::get('blog/setting', [\App\Http\Controllers\Blog\Admin\SettingController::class, 'index'])->name('admin.blog.setting.index');
+        Route::post('blog/setting', [\App\Http\Controllers\Blog\Admin\SettingController::class, 'update'])->name('admin.blog.setting.update');
+
         Route::name('admin.')->group(function() {
             Route::resources([
                 'blog' => \App\Http\Controllers\Blog\Admin\BlogController::class,

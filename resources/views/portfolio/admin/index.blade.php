@@ -16,7 +16,7 @@
             <a href="{{ route('admin.portfolio.create') }}" class="btn btn-primary float-right">Создать новое</a>
         </div><!-- input-group -->
         <div class="sh-pagetitle-left">
-            <div class="sh-pagetitle-icon"><i class="icon ion-ios-home"></i></div>
+            <div class="sh-pagetitle-icon"><i class="icon ion-ios-photos-outline"></i></div>
             <div class="sh-pagetitle-title">
                 <span>Список портфолио</span>
                 <h2>Портфолио</h2>
@@ -45,7 +45,8 @@
                         <thead>
                         <tr>
                             <th class="wd-5p">#</th>
-                            <th class="wd-25p">Название</th>
+                            <th class="wd-15p">Название</th>
+                            <th class="wd-10p">Категория</th>
                             <th class="wd-5p">Статус</th>
                             <th class="wd-10p">Дата публикации</th>
                             <th class="wd-10p">Дата создания</th>
@@ -58,6 +59,7 @@
                                 <tr>
                                     <td>{{ $item->id }}</td>
                                     <td>{{ $item->title }}</td>
+                                    <td>{{ $item->category->title }}</td>
                                     <td>@if($item->status) Опубликован @else Черновик @endif</td>
                                     <td>{{ $item->publish_at }}</td>
                                     <td>{{ $item->created_at }}</td>

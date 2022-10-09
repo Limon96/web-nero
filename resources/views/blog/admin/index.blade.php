@@ -16,7 +16,7 @@
             <a href="{{ route('admin.blog.create') }}" class="btn btn-primary float-right">Создать новую</a>
         </div><!-- input-group -->
         <div class="sh-pagetitle-left">
-            <div class="sh-pagetitle-icon"><i class="icon ion-ios-home"></i></div>
+            <div class="sh-pagetitle-icon"><i class="icon ion-ios-paper-outline"></i></div>
             <div class="sh-pagetitle-title">
                 <span>Список статей</span>
                 <h2>Блог</h2>

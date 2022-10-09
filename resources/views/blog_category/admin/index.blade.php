@@ -16,7 +16,7 @@
             <a href="{{ route('admin.blog_category.create') }}" class="btn btn-primary float-right">Создать новую</a>
         </div><!-- input-group -->
         <div class="sh-pagetitle-left">
-            <div class="sh-pagetitle-icon"><i class="icon ion-ios-home"></i></div>
+            <div class="sh-pagetitle-icon"><i class="icon ion-ios-paper-outline"></i></div>
             <div class="sh-pagetitle-title">
                 <span>Список категорий блога</span>
                 <h2>Категории</h2>

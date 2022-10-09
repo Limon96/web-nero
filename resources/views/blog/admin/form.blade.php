@@ -80,7 +80,7 @@
                 <!-- input-group-btn -->
             </div><!-- input-group -->
             <div class="sh-pagetitle-left">
-                <div class="sh-pagetitle-icon"><i class="icon ion-ios-bookmarks-outline"></i></div>
+                <div class="sh-pagetitle-icon"><i class="icon ion-ios-paper-outline"></i></div>
                 <div class="sh-pagetitle-title">
                     <span>Список всех статьи</span>
                     <h2>@yield('title')</h2>
