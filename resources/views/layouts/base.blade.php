@@ -126,7 +126,7 @@
     <div class="footer-widget-area">
         <div class="container">
             <p class="text-white text-large margin-10px-bottom margin-20px-top">© WEB-NERO</p>
-            <p class="text-light-gray margin-10px-bottom politick_foot"><a href="{{ asset('politika-obrabotki-personalnykh-dannykh.html') }}">Политика обработки персональных данных</a></p>
+            <p class="text-light-gray margin-10px-bottom politick_foot"><a href="{{ route('policy') }}">Политика обработки персональных данных</a></p>
         </div>
     </div>
 
@@ -152,7 +152,7 @@
                 <input type="number"  class="form_inputs" id="usernumber2" required name="usernumber" placeholder="Телефон">
             </div>
             <label class="container_ch modals">
-                <span class="bl_span2">Принимаю <a href="politika-obrabotki-personalnykh-dannykh.html">условия обработки персональных данных</a></span>
+                <span class="bl_span2">Принимаю <a href="{{ route('policy') }}">условия обработки персональных данных</a></span>
                 <input type="checkbox" name="checked" checked="checked" required>
                 <span class="checkmark_ch"></span>
             </label>
