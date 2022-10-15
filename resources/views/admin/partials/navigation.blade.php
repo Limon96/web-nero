@@ -7,12 +7,12 @@
                 <span>Панель управления</span>
             </a>
         </li><!-- nav-item -->
-        <li class="nav-item">
+        {{--<li class="nav-item">
             <a href="{{ route('admin.landing.index') }}" class="nav-link @if(Route::is('admin.landing.index')) active @endif">
                 <i class="icon ion-ios-bookmarks-outline"></i>
                 <span>Страницы</span>
             </a>
-        </li><!-- nav-item -->
+        </li><!-- nav-item -->--}}
 
 
         <li class="nav-item">

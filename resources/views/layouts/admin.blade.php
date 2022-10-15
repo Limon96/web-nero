@@ -25,8 +25,8 @@
 <body>
 
 <div class="sh-logopanel">
-    <a href="" class="sh-logo-text">
-        <img src="{{ asset('img/logo.png') }}" alt="">
+    <a href="{{ route('admin.dashboard') }}" class="sh-logo-text">
+        <img src="{{ asset('images/logo-blue-white.webp') }}" alt="">
     </a>
     <a id="navicon" href="" class="sh-navicon d-none d-xl-block"><i class="icon ion-navicon"></i></a>
     <a id="naviconMobile" href="" class="sh-navicon d-xl-none"><i class="icon ion-navicon"></i></a>

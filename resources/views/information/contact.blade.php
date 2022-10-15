@@ -1,16 +1,16 @@
 @extends('layouts.base')
 
-@section('title'){{ $item->meta_title ?? config('app.blog.title') }}@endsection
-@section('description'){{ $item->meta_description ?? config('app.blog.meta_description') }}@endsection
-@section('keywords'){{ $item->meta_keywords ?? config('app.blog.meta_keywords') }}@endsection
+@section('title'){{ config('app.portfolio.title') }}@endsection
+@section('description'){{ config('app.portfolio.meta_description') }}@endsection
+@section('keywords'){{ config('app.portfolio.meta_keywords') }}@endsection
 @section('microdata')
 
     <meta property="og:site_name" content="WEB-NERO" />
     <meta property="og:url" content="{{ route('home') }}" />
-    <meta property="og:title" content="{{ $item->meta_title ?? config('app.blog.og_title') }}" />
-    <meta property="og:description" content="{{ $item->meta_description ?? config('app.blog.og_description') }}" />
-    <meta property="og:image" content="{{ asset($item->image ?? config('app.blog.og_image')) }}" />
-    <meta property="og:image:url" content="{{ asset($item->image ?? config('app.blog.og_image')) }}" />
+    <meta property="og:title" content="{{ config('app.blog.og_title') }}" />
+    <meta property="og:description" content="{{ config('app.blog.og_description') }}" />
+    <meta property="og:image" content="{{ asset(config('app.blog.og_image')) }}" />
+    <meta property="og:image:url" content="{{ asset(config('app.blog.og_image')) }}" />
     <meta property="og:street_address" content="г. Краснодар" />
     <meta property="og:country_name" content="Россия" />
 
@@ -19,56 +19,26 @@
 @section('scripts')
 
 @endsection
-@section('scripts')
-    <script>
-
-    </script>
-@endsection
 
 @section("content")
 
 
-    <!-- blog cover-->
-    <section class="bg blog-cover" style="background-image: url({{ asset($item->image) }});">
+    <!-- cover-->
+    <section class="bg blog-cover">
         <div class="container">
             <div class="text-center sm-padding-40px-tb sm-padding-15px-lr">
-                <h1 class="display-none no-padding no-margin" aria-hidden="true">NERO-WEB, Создание сайтов, интернет магазинов, SEO продвижение, Блог</h1>
-                <h2 class="display-none no-padding no-margin" aria-hidden="true">Создание сайтов в Краснодаре от 5000 рублей под ключ, Блог</h2>
-                <h5 class="text-capitalize alt-font text-white margin-20px-bottom font-weight-700">{{ $item->title }}</h5>
-
+                <h1 class="display-none no-padding no-margin" aria-hidden="true">NERO-WEB, Создание сайтов, интернет магазинов, SEO продвижение, Контакты</h1>
+                <h2 class="display-none no-padding no-margin" aria-hidden="true">Создание сайтов в Краснодаре от 5000 рублей под ключ, Контакты</h2>
+                <h5 class="text-uppercase alt-font text-white margin-20px-bottom font-weight-700">
+                    Контакты</h5>
+                <p class="text-white margin-5px-bottom">Будем рады ответить на любые вопросы</p>
                 <div class="page_nav">
-                    <a href="{{ route('home') }}" class="text-white">Главная</a>
-                    <span class="text-white">
-                    <i class="fa fa-angle-double-right"></i>
-                    <a href="{{ route('blog_category.index') }}" class="text-white"> Блог</a>
-                </span>
+                    <span class="text-white"></span> <a href="index.html" class="text-white">Главная</a> <span class="text-white"><i class="fa fa-angle-double-right"></i>Контакты</span>
                 </div>
             </div>
         </div>
     </section>
-    <!-- blog cover end-->
-
-    <!-- blog content-->
-    <section class="standalone text-center for_single">
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-md-12 text-left sm-text-center margin-80px-bottom sm-margin-50px-bottom">
-                    <div class="standalon-text">
-
-                        {!! $item->text !!}
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <!-- blog content end-->
-
+    <!-- cover end-->
 
     <!-- contact-->
     <section class="btn-version">
@@ -172,5 +142,4 @@
     <!-- contact end -->
 
 @endsection
-
 

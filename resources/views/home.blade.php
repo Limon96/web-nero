@@ -532,7 +532,7 @@
                     <p class="text-large text-white margin-10px-bottom font-weight-400 margin-10px-bottom">7 лет работы - дают о себе знать</p>
                     <h3 class="text-capitalize alt-font text-white margin-30px-bottom font-weight-300 sm-width-100 xs-width-100">
                         Портфолио</h3>
-                    <a data-fancybox="" href="porfolio.html" class="btn btn-rounded btn-blue btn-hvr-white btn-large"><i class="fa fa-play"></i> Ознакомиться</a>
+                    <a data-fancybox="" href="{{ route('portfolio.index') }}" class="btn btn-rounded btn-blue btn-hvr-white btn-large"><i class="fa fa-play"></i> Ознакомиться</a>
                 </div>
             </div>
         </div>
@@ -643,7 +643,7 @@
                 <div class="row">
                     <div class="col-md-6 no-padding">
                         <div class="about-image hover-effect">
-                            <img alt="web-nero создание сайтов Краснодар" src="images/split-img1.webp" class="equalheight">
+                            <img alt="web-nero создание сайтов Краснодар" src="{{ asset('images/split-img1.webp') }}" class="equalheight">
                         </div>
                     </div>
                     <div class="col-md-6 sm-padding-50px-tb">
@@ -666,7 +666,7 @@
                 <div class="row">
                     <div class="col-md-6 no-padding pull-right sm-float-none">
                         <div class="about-image hover-effect">
-                            <img alt="web-nero создание сайтов Краснодар" src="images/split-img2.webp" class="equalheight">
+                            <img alt="web-nero создание сайтов Краснодар" src="{{ asset('images/split-img2.webp') }}" class="equalheight">
                         </div>
                     </div>
                     <div class="col-md-6 sm-padding-50px-tb">
@@ -758,7 +758,7 @@
                     <p class="text-large text-white margin-10px-bottom font-weight-400 margin-10px-bottom">Полезные статьи</p>
                     <h3 class="text-capitalize alt-font text-white margin-30px-bottom font-weight-300 sm-width-100 xs-width-100">
                         Блог</h3>
-                    <a data-fancybox="" href="blog.html" class="btn btn-rounded btn-blue btn-hvr-white btn-large"><i class="fa fa-play"></i> Перейти в Блог</a>
+                    <a data-fancybox="" href="{{ route('blog_category.index') }}" class="btn btn-rounded btn-blue btn-hvr-white btn-large"><i class="fa fa-play"></i> Перейти в Блог</a>
                 </div>
             </div>
         </div>
@@ -840,7 +840,7 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div  class="testimonial-client-img">
-                                <img src="images/testimonial-two-client5.webp" alt="web-nero создание сайтов Краснодар">
+                                <img src="{{ asset('images/testimonial-two-client5.webp') }}" alt="web-nero создание сайтов Краснодар">
                             </div>
                             <div class="testimonial-client-name">
                                 <h6 class="text-large text-blue font-weight-600 margin-5px-bottom margin-30px-top text-center">Migru</h6>
@@ -868,7 +868,7 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div  class="testimonial-client-img">
-                                <img src="images/testimonial-two-client1.webp" alt="web-nero создание сайтов Краснодар">
+                                <img src="{{ asset('images/testimonial-two-client1.webp') }}" alt="web-nero создание сайтов Краснодар">
                             </div>
                             <div class="testimonial-client-name">
                                 <h6 class="text-large text-blue font-weight-600 margin-5px-bottom margin-30px-top text-center">TransAvto-7</h6>
@@ -896,7 +896,7 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div  class="testimonial-client-img">
-                                <img src="images/testimonial-two-client2.webp" alt="web-nero создание сайтов Краснодар">
+                                <img src="{{ asset('images/testimonial-two-client2.webp') }}" alt="web-nero создание сайтов Краснодар">
                             </div>
                             <div class="testimonial-client-name">
                                 <h6 class="text-large text-blue font-weight-600 margin-5px-bottom margin-30px-top text-center">Studentik online</h6>
@@ -926,7 +926,7 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div  class="testimonial-client-img">
-                                <img src="images/testimonial-two-client3.webp" alt="web-nero создание сайтов Краснодар">
+                                <img src="{{ asset('images/testimonial-two-client3.webp') }}" alt="web-nero создание сайтов Краснодар">
                             </div>
                             <div class="testimonial-client-name">
                                 <h6 class="text-large text-blue font-weight-600 margin-5px-bottom margin-30px-top text-center">Lagi24</h6>
@@ -957,7 +957,7 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div  class="testimonial-client-img">
-                                <img src="images/testimonial-two-client4.webp" alt="web-nero создание сайтов Краснодар">
+                                <img src="{{ asset('images/testimonial-two-client4.webp') }}" alt="web-nero создание сайтов Краснодар">
                             </div>
                             <div class="testimonial-client-name">
                                 <h6 class="text-large text-blue font-weight-600 margin-5px-bottom margin-30px-top text-center">Blast</h6>
@@ -1066,7 +1066,7 @@
                                           cols="25" placeholder="Ваше сообщение, вопрос"></textarea>
                                     </div>
                                     <label class="container_ch">
-                                        <span class="bl_span">Принимаю <a href="politika-obrabotki-personalnykh-dannykh.html">условия обработки персональных данных</a></span>
+                                        <span class="bl_span">Принимаю <a href="{{ route('policy') }}">условия обработки персональных данных</a></span>
                                         <input type="checkbox" name="checked" checked="checked" required>
                                         <span class="checkmark_ch"></span>
                                     </label>

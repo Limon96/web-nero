@@ -62,7 +62,7 @@
                                 <a href="{{ route('blog_category.index') }}" >Статьи</a>
                             </li>
                             <li>
-                                <a href="contact.html" >Контакты</a>
+                                <a href="{{ route('contact') }}" >Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -91,19 +91,19 @@
                         </div>
                         <ul class="push_nav centered">
                             <li>
-                                <a href="#price" class="scroll">Цены</a>
+                                <a href="{{ route('home') }}#price" class="scroll">Цены</a>
                             </li>
                             <li>
-                                <a href="porfolio.html" >Портфолио</a>
+                                <a href="{{ route('portfolio.index') }}" >Портфолио</a>
                             </li>
                             <li>
-                                <a href="#about" class="scroll">О нас</a>
+                                <a href="{{ route('home') }}#about" class="scroll">О нас</a>
                             </li>
                             <li>
-                                <a href="blog.html" >Статьи</a>
+                                <a href="{{ route('blog_category.index') }}" >Статьи</a>
                             </li>
                             <li>
-                                <a href="contact.html" >Контакты</a>
+                                <a href="{{ route('contact') }}" >Контакты</a>
                             </li>
                         </ul>
 

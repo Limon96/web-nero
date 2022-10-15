@@ -4,9 +4,10 @@
         <div class="container nav-header-container">
             <div class="row">
                 <div class="col-md-2 col-xs-5">
-                    <a href="index.html" title="Logo" class="logo scroll">
-                        <img src="images/logo-blue-black.webp" class="logo-dark" alt="web-nero">
-                        <img src="images/logo-blue-white.webp" alt="web-nero" class="logo-light default"></a>
+                    <a href="{{ route('home') }}" title="Logo" class="logo scroll">
+                        <img src="{{ asset('images/logo-blue-black.webp') }}" class="logo-dark" alt="web-nero">
+                        <img src="{{ asset('images/logo-blue-white.webp') }}" alt="web-nero" class="logo-light default">
+                    </a>
                 </div>
                 <!-- end logo -->
                 <div class="col-md-7 col-xs-2 width-auto pull-right accordion-menu xs-no-padding-right hidden-sm hidden-xs">
@@ -18,13 +19,13 @@
                                 <a href="#price" class="scroll">Цены</a>
                             </li>
                             <li>
-                                <a href="porfolio.html" >Портфолио</a>
+                                <a href="{{ route('portfolio.index') }}" >Портфолио</a>
                             </li>
                             <li>
                                 <a href="#about" class="scroll">О нас</a>
                             </li>
                             <li>
-                                <a href="blog.html" >Статьи</a>
+                                <a href="{{ route('blog.index') }}" >Статьи</a>
                             </li>
                             <li>
                                 <a href="contact.html" >Контакты</a>
@@ -46,7 +47,7 @@
                 </div>
                 <div class="sidebar_menu">
                     <nav class="pushmenu pushmenu-right">
-                        <a class="push-logo" href="index.html"><img src="images/logo-blue-white.webp" alt="logo"></a>
+                        <a class="push-logo" href="{{ route('home') }}"><img src="{{ asset('images/logo-blue-white.webp') }}" alt="logo"></a>
                         <div class="medium-icon side-nav-social-icon list-inline">
                             <a class="facebook-bg-hvr" href="https://wa.me/79874451638" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
 
@@ -59,13 +60,13 @@
                                 <a href="#price" class="scroll">Цены</a>
                             </li>
                             <li>
-                                <a href="porfolio.html" >Портфолио</a>
+                                <a href="{{ route('portfolio.index') }}" >Портфолио</a>
                             </li>
                             <li>
                                 <a href="#about" class="scroll">О нас</a>
                             </li>
                             <li>
-                                <a href="blog.html" >Статьи</a>
+                                <a href="{{ route('blog.index') }}" >Статьи</a>
                             </li>
                             <li>
                                 <a href="contact.html" >Контакты</a>
