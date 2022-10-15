@@ -86,7 +86,7 @@
                     </div>
                     <div class="col-md-6 text-left sm-text-center margin-80px-bottom sm-margin-50px-bottom">
                         <div class="standalon-image">
-                            <img src="images/standalone1.webp" alt="web-nero создание сайтов Краснодар">
+                            <img src="{{ asset('images/standalone1.webp') }}" alt="web-nero создание сайтов Краснодар">
                         </div>
                     </div>
                 </div>
