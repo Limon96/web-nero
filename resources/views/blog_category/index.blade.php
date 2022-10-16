@@ -70,26 +70,7 @@
                     </div>
                 </div>
                 @endforeach
-                <div class="item_st clearfix">
-                    <div class="col-md-6 text-left sm-text-center margin-80px-bottom sm-margin-50px-bottom">
-                        <div class="standalon-text">
-                            <a href="#">
-                                <h5 class="text-uppercase alt-font text-extra-dark-gray margin-20px-bottom font-weight-700 sm-width-100 xs-width-100">
-                                    <span class="text-blue">Нужно ли создавать  </span>интернет-магазин?
-                                </h5>
-                            </a>
-                            <p>
-                                Спойлер: непременно нужно. Мир не стоит на месте, постоянно обновляясь и совершенствуясь. Это касается каждой отрасли жизнедеятельности человечества, будь то культура, политика или экономика. И поскольку последняя олицетворяет уровень благосостояния общества, ее развитию уделено особое внимание. Именно поэтому последние годы стремительно развиваются технологии цифровой экономики, основанной на электронной коммерции, к которой можно отнести и интернет-магазины.
-                            </p>
-                            <a href="#" class="page_st">Подробне</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-left sm-text-center margin-80px-bottom sm-margin-50px-bottom">
-                        <div class="standalon-image">
-                            <img src="{{ asset('images/standalone1.webp') }}" alt="web-nero создание сайтов Краснодар">
-                        </div>
-                    </div>
-                </div>
+               
 
             </div>
 
