@@ -1342,6 +1342,9 @@ ul.packages li i {
 .for_single{
 
 }
+.for_single.asd{
+    padding-bottom: 0;
+}
 
 .for_single p{
 

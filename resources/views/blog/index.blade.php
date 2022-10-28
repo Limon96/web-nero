@@ -49,7 +49,7 @@
     <!-- blog cover end-->
 
     <!-- blog content-->
-    <section class="standalone text-center for_single">
+    <section class="standalone text-center for_single asd">
 
         <div class="container">
 

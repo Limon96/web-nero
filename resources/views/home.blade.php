@@ -334,7 +334,6 @@
 
 
 
-
     <!-- team -->
     <section id="price" class="text-center bg-light-gray">
         <div class="container">
