@@ -5,7 +5,7 @@
 
     <meta property="og:site_name" content="WEB-NERO" />
     <meta property="og:url" content="{{ route('home') }}" />
-    <meta property="og:title" content="Создание и продвижение сайтов в Краснодаре - &quot;WEB-NERO&quot;" />
+    <meta property="og:title" content="Создание и продвижение сайтов в Краснодаре - WEB-NERO" />
     <meta property="og:description" content="Создание и продвижение сайтов в Краснодаре. Комплексная оптимизация проектов. Выводим в ТОП результативные запросы. Честную цену, результат и качество работ гарантируем." />
     <meta property="og:image" content="{{ asset('images/baner.webp') }}" />
     <meta property="og:image:url" content="{{ asset('images/baner.webp') }}" />
