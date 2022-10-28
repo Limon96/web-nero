@@ -55,19 +55,34 @@
                     </div>
                 </div>
             </div>
+        </div>
 
+
+
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12">
+                <div class="hert_f_bitrok">
                     <div class="bitrok">
                         @foreach($items as $item)
+
+
+
                             <div class="item_port" attr-cat="{{ $item->category->slug }}">
-                                <div class="inner">
-                                    <a href="{{ route('portfolio.show', $item->slug) }}" target="_blank"><div class="img_fet" style="background-image: url('{{ thumbnail($item->image, 640) }}')"></div></a>
+                                <div class="img_ret">
+                                    <div class="ips_div" style="background-image: url('{{ thumbnail($item->image, 640) }}')">
+
+                                    </div>
+                                </div>
+
+                                <div class="block_info">
                                     <div class="title_port">{{ $item->title }}</div>
                                     <div class="cat_port">{{ $item->category->title }}</div>
-                                    <a href="{{ route('portfolio.show', $item->slug) }}" class="go_single" target="_blank">Подробнее</a>
+                                    <a href="{{ route('portfolio.show', $item->slug) }}" target="_blank">Подробнее</a>
                                 </div>
+
+
                             </div>
+
                         @endforeach
                     </div>
                 </div>
