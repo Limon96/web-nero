@@ -1,2 +1,3 @@
 User-agent: *
-Disallow: /
+Disallow: /_manager
+Sitemap: http://web-nero.ru/sitemap.xml
