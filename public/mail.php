@@ -24,14 +24,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     // Формируем письмо
     $message = "<b>НОВАЯ ЗАЯВКА!</b>
-		       
-		        <br /> Имя: $name
-		        <br /> Номер телефона: $number
-		        <br /> Сообщение: $message
-		        <br /> E-mail: $email
-		        <br /> Откуда: $formact
-		        <br /> Согласен с политикой?: $checked
-		        <br />";
+
+		        <br/> Имя: $name
+		        <br/> Номер телефона: $number
+		        <br/> Сообщение: $message
+		        <br/> E-mail: $email
+		        <br/> Откуда: $formact
+		        <br/> Согласен с политикой?: $checked
+		        <br/>";
 
 
 
