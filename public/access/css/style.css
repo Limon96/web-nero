@@ -1618,6 +1618,7 @@ ul.packages li i {
 }
 .single_portfol img{
     width: 100%;
+    box-shadow: 0 0 14px #d7d7d79c;
 }
 
 
