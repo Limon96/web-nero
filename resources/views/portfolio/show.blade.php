@@ -49,7 +49,7 @@
                 <div class="col-md-12">
                     <p>{{ $item->category->title }}</p>
                     <p>{!! $item->text !!}</p>
-                    @if($item->link)<a href="{{ $item->link }}" target="_blank">Перейти на сайт</a>@endif
+                    @if($item->link)<a rel="nofollow" href="{{ $item->link }}" target="_blank">Перейти на сайт</a>@endif
 
                     <img src="{{ asset($item->image) }}" alt="{{ $item->title }}">
                 </div>
