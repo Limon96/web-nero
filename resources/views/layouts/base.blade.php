@@ -113,6 +113,15 @@
                         <a href="https://t.me/neroweb2" target="_blank" class="twitter-bg-hvr"><i class="fa fa-telegram"></i></a>
                     </div>
                 </div>
+
+                <div class="phone_poter">
+                    <a href="tel:89612686212">
+                        <i class="fa fa-phone"></i>
+                        <span>8 (961) 268-62-12</span>
+                    </a>
+                </div>
+
+
                 <!--side nav -->
                 <div id="menu_bars" class="right menu_bars">
                     <span class="t1"></span>

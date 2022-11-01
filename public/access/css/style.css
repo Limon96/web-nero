@@ -1405,6 +1405,46 @@ ul.packages li i {
 }
 
 
+.phone_poter{
+
+}
+.phone_poter a{
+
+}
+
+.phone_poter a i{
+    color: #fff;
+    font-size: 18px;
+    margin-left: 9px;
+    font-weight: 500;
+}
+
+.phone_poter a span{
+    color: #fff;
+    font-size: 18px;
+    margin-left: 9px;
+    font-weight: 500;
+}
+
+
+
+.sticky .phone_poter a i{
+    color: #000;
+}
+
+.sticky .phone_poter a span{
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .bitrok .item_port {
@@ -3293,6 +3333,29 @@ nav.navbar.bootsnav li.dropdown ul li {
     .bitrok .item_port {
         width: 100%;
     }
+
+
+
+    .phone_poter a i {
+        display: none;
+    }
+
+    .phone_poter a span {
+        color: #fff;
+        font-size: 14px;
+        margin-left: 0px;
+        font-weight: 500;
+        position: relative;
+        right: 32px;
+        top: 3px;
+    }
+
+
+
+    .sticky .logo-dark{
+        margin-top: 10px;
+    }
+
 
 
 }
