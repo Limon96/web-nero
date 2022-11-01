@@ -39,7 +39,7 @@
     <!-- blog cover end-->
 
     <!-- blog content-->
-    <section class="standalone text-center">
+    <section class="standalone text-center many_clients">
 
         <div class="container">
 
