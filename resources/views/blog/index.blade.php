@@ -89,7 +89,7 @@
                                 Наши мессенджеры и контакты</h5>
                             <div class="button_contacts_foot">
                                 <div class="item_root">
-                                    <a href="https://wa.me/79874451638" target="_blank">
+                                    <a href="https://wa.me/79612686212" target="_blank">
                                         <i aria-hidden="true" class="fa fa-whatsapp"></i>
                                         <span>Написать в WhatsApp</span>
                                     </a>
