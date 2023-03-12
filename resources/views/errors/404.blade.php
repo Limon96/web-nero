@@ -64,7 +64,7 @@
                                 Наши мессенджеры и контакты</h5>
                             <div class="button_contacts_foot">
                                 <div class="item_root">
-                                    <a href="https://wa.me/79612686212" target="_blank">
+                                    <a href="https://wa.me/79649000572" target="_blank">
                                         <i aria-hidden="true" class="fa fa-whatsapp"></i>
                                         <span>Написать в WhatsApp</span>
                                     </a>
@@ -76,7 +76,7 @@
                                     </a>
                                 </div>
                                 <div class="item_root">
-                                    <a href="tel:89612686212">
+                                    <a href="tel:89649000572">
                                         <i aria-hidden="true" class="fa fa-phone"></i>
                                         <span>Позвонить на телефон</span>
                                     </a>

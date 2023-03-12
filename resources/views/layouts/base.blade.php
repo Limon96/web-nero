@@ -109,15 +109,15 @@
                 </div>
                 <div class="col-md-2 col-xs-5 width-auto sm-width-15 xs-width-20 no-padding">
                     <div class="header-social-icon sm-display-none" aria-hidden="true">
-                        <a href="https://wa.me/79612686212" target="_blank" class="facebook-bg-hvr"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href="https://wa.me/79649000572" target="_blank" class="facebook-bg-hvr"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
                         <a href="https://t.me/neroweb2" target="_blank" class="twitter-bg-hvr"><i class="fa fa-telegram"></i></a>
                     </div>
                 </div>
 
                 <div class="phone_poter">
-                    <a href="tel:89612686212">
+                    <a href="tel:89649000572">
                         <i class="fa fa-phone"></i>
-                        <span>8 (961) 268-62-12</span>
+                        <span>+7 (964) 900-05-72</span>
                     </a>
                 </div>
 
@@ -132,7 +132,7 @@
                     <nav class="pushmenu pushmenu-right">
                         <a class="push-logo" href="{{ route('home') }}"><img src="{{ asset('images/logo-blue-white.webp') }}" alt="logo"></a>
                         <div class="medium-icon side-nav-social-icon list-inline">
-                            <a class="facebook-bg-hvr" href="https://wa.me/79612686212" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            <a class="facebook-bg-hvr" href="https://wa.me/79649000572" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
 
                             <a class="pinterest-bg-hvr" href="https://t.me/neroweb2" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
 
