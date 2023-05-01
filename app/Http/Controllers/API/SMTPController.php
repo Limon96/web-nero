@@ -21,7 +21,7 @@ class SMTPController extends Controller
 
         $message = $this->message($data);
 
-        Mail::to('nicker08@inbox.ru')->send(new SMTP(
+        Mail::to('contact@shop.Indesit.ru')->send(new SMTP(
             $data['subject'],
             $message,
         ));
