@@ -27,6 +27,7 @@ class SMTPController extends Controller
         ));
 
         return response()
+            ->header('Access-Control-Allow-Origin', '*')
             ->json([
                 'success' => 1
             ]);
