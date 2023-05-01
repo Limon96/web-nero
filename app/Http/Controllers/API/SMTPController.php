@@ -28,7 +28,9 @@ class SMTPController extends Controller
 
         return response()
             ->header('Access-Control-Allow-Origin', '*')
-            ->header('Access-Control-Allow-Credentials', 'true')
+            ->header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS')
+            ->header('Access-Control-Allow-Headers', 'X-Requested-With,Authorization,Content-Type')
+            ->header('Access-Control-Max-Age', '86400')
             ->json([
                 'success' => 1
             ]);
