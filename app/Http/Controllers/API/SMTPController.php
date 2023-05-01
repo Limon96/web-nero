@@ -27,10 +27,6 @@ class SMTPController extends Controller
         ));
 
         return response()
-            ->header('Access-Control-Allow-Origin', '*')
-            ->header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS')
-            ->header('Access-Control-Allow-Headers', 'X-Requested-With,Authorization,Content-Type')
-            ->header('Access-Control-Max-Age', '86400')
             ->json([
                 'success' => 1
             ]);
@@ -40,7 +36,7 @@ class SMTPController extends Controller
     {
         return "
             <h1>{$data['subject']}</h1>\n
-            <p><b>Email:</b>  {$data['email']}</p>\n
+            <p><b>Email:</b>  {$data['from']}</p>\n
             <p><b>Вопрос:</b>  {$data['content']}</p>
         ";
     }
