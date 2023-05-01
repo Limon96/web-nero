@@ -36,6 +36,7 @@ class SMTPController extends Controller
     {
         return "
             <h1>{$data['subject']}</h1>\n
+            <p><b>Имя:</b>  {$data['name']}</p>\n
             <p><b>Email:</b>  {$data['from']}</p>\n
             <p><b>Вопрос:</b>  {$data['content']}</p>
         ";
