@@ -28,6 +28,7 @@ class SMTPController extends Controller
 
         return response()
             ->header('Access-Control-Allow-Origin', '*')
+            ->header('Access-Control-Allow-Credentials', 'true')
             ->json([
                 'success' => 1
             ]);
