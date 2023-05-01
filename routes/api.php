@@ -19,3 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('smtp', [\App\Http\Controllers\API\SMTPController::class, 'send'])->middleware('cors');
+Route::options('smtp', function () {
+    return 'Hello World';
+})->middleware('cors');
