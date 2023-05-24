@@ -27,8 +27,8 @@ class SMTPRequest extends FormRequest
             'to' => 'required|string',
             'from' => 'required|string',
             'subject' => 'required|string',
-            'name' => 'required|string',
-            'content' => 'required|string'
+            'name' => '',
+            'content' => ''
         ];
     }
 }
