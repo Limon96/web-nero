@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Blog;
+namespace App\Http\Controllers\Portfolio;
 
 use App\Http\Controllers\Controller;
 use App\Repositories\BlogCategoryRepository;
@@ -10,7 +10,8 @@ use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 
-class PortfolioCategoryController extends Controller {
+class PortfolioCategoryController extends Controller
+{
 
     use HasBlogCategory;
 

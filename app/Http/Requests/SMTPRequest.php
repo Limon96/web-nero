@@ -24,6 +24,7 @@ class SMTPRequest extends FormRequest
     public function rules()
     {
         return [
+            'to' => 'required|string',
             'from' => 'required|string',
             'subject' => 'required|string',
             'name' => 'required|string',

@@ -19,9 +19,10 @@ class SMTPController extends Controller
     {
         $data = $request->validated();
 
+        $to = $this->to($data);
         $message = $this->message($data);
 
-        Mail::to('contact@shop.Indesit.ru')->send(new SMTP(
+        Mail::to($to)->send(new SMTP(
             $data['subject'],
             $message,
         ));
@@ -30,6 +31,11 @@ class SMTPController extends Controller
             ->json([
                 'success' => 1
             ]);
+    }
+
+    private function to($data)
+    {
+        return $data['to'] ?? false;
     }
 
     private function message($data)
@@ -41,4 +47,5 @@ class SMTPController extends Controller
             <p><b>Вопрос:</b>  {$data['content']}</p>
         ";
     }
+
 }
