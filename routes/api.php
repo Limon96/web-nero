@@ -22,6 +22,3 @@ Route::post('smtp', [\App\Http\Controllers\API\SMTPController::class, 'send'])->
 Route::options('smtp', function () {
     return 'Hello World';
 })->middleware('cors');
-Route::get('smtp', function () {
-    return 'Hello World';
-})->middleware('cors');
