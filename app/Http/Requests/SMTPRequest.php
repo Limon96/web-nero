@@ -28,6 +28,7 @@ class SMTPRequest extends FormRequest
             'from' => 'required|string',
             'subject' => 'required|string',
             'name' => '',
+            'phone' => '',
             'content' => '',
             'message' => ''
         ];
