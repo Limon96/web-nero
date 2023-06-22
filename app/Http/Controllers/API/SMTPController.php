@@ -45,6 +45,7 @@ class SMTPController extends Controller
             "  . (isset($data['name']) ? "<p><b>Имя:</b>  {$data['name']}</p>\n": '') ."
             <p><b>Email:</b>  {$data['from']}</p>\n
             "  . (isset($data['content']) ? "<p><b>Вопрос:</b>  {$data['content']}</p>\n": '') ."
+            "  . (isset($data['message']) ? "<p><b>Сообщение:</b>  {$data['message']}</p>\n": '') ."
         ";
     }
 
