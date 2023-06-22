@@ -21,7 +21,6 @@ class SMTPController extends Controller
 
         $to = $this->to($data);
         $message = $this->message($data);
-        dd($message, $to);
 
         Mail::to($to)->send(new SMTP(
             $data['subject'],
