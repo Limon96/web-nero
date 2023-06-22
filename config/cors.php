@@ -22,7 +22,7 @@ return [
     'allowed_origins' => [
         'https://indesit-test.ru',
         'http://hotpoint-test.ru/',
-        'https://hotpoint-test.ru/', 
+        'https://hotpoint-test.ru/',
     ],
 
     'allowed_origins_patterns' => ['*'],
